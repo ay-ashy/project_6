@@ -76,8 +76,8 @@ const createProduct = (req, res) => {
 {
     createProduct,
     getAllProduct,
-    updateProductById,
-    deleteProductById,
-    getProductById
+    updateProductById ,
+    deleteProductById ,
+    getProductById 
  
 };

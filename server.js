@@ -5,6 +5,7 @@ const app = express();
 
 
 const productModel = require("./routers/routes/product")
+const categoryModel=require('./routers/routes/category')
 
 //built-in middlewares
 app.use(express.json());
@@ -13,6 +14,7 @@ app.use(express.json());
 //third-party middleware
 app.use(cors());
 app.use(productModel);
+app.use(categoryModel);
 
 
 

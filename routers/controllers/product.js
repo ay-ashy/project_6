@@ -1,5 +1,5 @@
 const productModel = require("./../../db/model/product");
-
+   
 
 
 const createProduct = (req, res) => {

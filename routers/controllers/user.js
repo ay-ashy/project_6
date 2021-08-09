@@ -1,4 +1,4 @@
-const userModel = require("./../../db/model/");
+const userModel = require("./../../db/model/user");
 
 const getUserById = (req, res) => {
   const _id = req.token._id;

@@ -1,9 +1,9 @@
-const usersModel = require("./../../../db/model/user");
+const createUser = require("./../../db/model/user");
 
 const signUp = (req, res) => {
   const { firstName, lastName, age, country, email, password, role } = req.body;
 
-  const user = new usersModel({
+  const user = new createUser({
     firstName,
     lastName,
     age,
@@ -19,7 +19,7 @@ const signUp = (req, res) => {
       res.status(201).json(result);
     })
     .catch((err) => {
-      res.status(400).send("signup err");
+      res.send(err);
     });
 };
 module.exports = {

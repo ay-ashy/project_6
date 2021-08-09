@@ -19,7 +19,7 @@ const signUp = (req, res) => {
       res.status(201).json(result);
     })
     .catch((err) => {
-      res.status(400).send("signup err");
+      res.status(400).send(err);
     });
 };
 module.exports = {

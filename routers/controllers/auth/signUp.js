@@ -11,6 +11,7 @@ const signUp = (req, res) => {
     email,
     password,
     role,
+
   });
 
   user
@@ -19,7 +20,7 @@ const signUp = (req, res) => {
       res.status(201).json(result);
     })
     .catch((err) => {
-      res.status(400).send("signup err");
+      res.status(400).send("signUp err");
     });
 };
 module.exports = {
